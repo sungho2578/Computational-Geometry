@@ -110,7 +110,7 @@ void computeLeftLeftIntersection(const Polygon& p1, std::pair<int, int> tb1,
     std::cout << "j: " << j << std::endl;		// index tracker for visual check
     std::cout << "inter: " << inter << std::endl;	// intersection point tracker for visual check
 
-    if (!std::isnan(inter.point.x) && !std::isnan(inter.point.y)) {
+    if (!isnan(inter.point.x) && !isnan(inter.point.y)) {
       intersections.push_back(inter);	// If intersection point between two line segments is not a NaN,
     }					// meaning inter points does exist, push the result into the list.
 
@@ -150,7 +150,7 @@ void computeRightRightIntersection(const Polygon& p1, std::pair<int, int> tb1,
     std::cout << "j: " << j << std::endl;
     std::cout << "inter: " << inter << std::endl;
 
-    if (!std::isnan(inter.point.x) && !std::isnan(inter.point.y)) {
+    if (!isnan(inter.point.x) && !isnan(inter.point.y)) {
       intersections.push_back(inter);
     }
 
@@ -191,7 +191,7 @@ void computeLeftRightIntersection(const Polygon& p1, std::pair<int, int> tb1,
     std::cout << "j: " << j << std::endl;
     std::cout << "inter: " << inter << std::endl;
 
-    if (!std::isnan(inter.point.x) && !std::isnan(inter.point.y)) {
+    if (!isnan(inter.point.x) && !isnan(inter.point.y)) {
       intersections.push_back(inter);
     }
 
@@ -232,7 +232,7 @@ void computeRightLeftIntersection(const Polygon& p1, std::pair<int, int> tb1,
     std::cout << "j: " << j << std::endl;
     std::cout << "inter: " << inter << std::endl;
 
-    if (!std::isnan(inter.point.x) && !std::isnan(inter.point.y)) {
+    if (!isnan(inter.point.x) && !isnan(inter.point.y)) {
       intersections.push_back(inter);
     }
 
